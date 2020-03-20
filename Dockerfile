@@ -6,5 +6,5 @@ RUN apt-get update \
     && cd emsdk-master \
     && ./emsdk install latest-fastcomp \
     && ./emsdk activate latest-fastcomp
-ENV PATH $PATH:/emsdk-master:/emsdk-master/upstream/emscripten:/emsdk-master/node/12.9.1_64bit/bin
+ENV PATH $PATH:/emsdk-master:/emsdk-master/fastcomp/emscripten:/emsdk-master/node/12.9.1_64bit/bin
 WORKDIR /workdir
