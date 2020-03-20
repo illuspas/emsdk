@@ -6,7 +6,5 @@ RUN apt-get update \
     && cd emsdk-master \
     && ./emsdk install latest \
     && ./emsdk activate latest \
-    && source ./emsdk_env.sh \
-    && emcc \
     && embuilder.py build libcompiler_rt libc-wasm libdlmalloc libpthread_stub libc_rt_wasm libsockets 
 WORKDIR /workdir
