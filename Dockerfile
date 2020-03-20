@@ -1,7 +1,7 @@
 FROM python:3.7-slim-buster
 
 RUN apt-get update \
-    && apt-get -y install curl \
+    && apt-get -y install curl xz-utils bzip2 \
     && curl -L https://github.com/emscripten-core/emsdk/archive/master.tar.gz | tar xvz \
     && cd emsdk-master \
     && ./emsdk install latest-fastcomp \
